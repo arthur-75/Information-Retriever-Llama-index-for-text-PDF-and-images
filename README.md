@@ -47,7 +47,7 @@ python app.py
 
 ## Authors
 
-- [Your Name](https://github.com/your_username)
+- [Arthur SATOUF](https://www.linkedin.com/in/arthur-satouf/)
 
 ## License
 
