@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Retriever</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Information Retriever</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <!-- Add more menu items as needed -->
+    </nav>
+
+    <div class="container">
+        <h2>IR</h2>
+        <h3>Information Retriever</h3>
+        <form action="/classify" method="post">
+            <label for="text">Enter Text:</label>
+            <textarea name="text" id="text" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Retrieve Information">
+        </form>
+
+        {% if test_query %}
+            <h3>Results for Query: {{ test_query }}</h3>
+
+            {% if results_info %}
+            <h1>Results for top 3 texts and top 3 images</h2>
+                {% for result in results_info %}
+                    {% if result.type == 'image' %}
+                        <p>Image File Path: {{ result.file_path }}</p>
+                        <p>Score: {{ result.score }}</p>
+                        <img src="{{ url_for('static', filename=result.file_path) }}" alt="Image" style="max-width: 600px; max-height: 400px;">
+                    {% else %}
+                        
+                        <p>Text File Path: {{ result.file_path }}</p>
+                        <p>Score: {{ result.score }}</p>
+                        <pre><p><strong>Text: {{ result.text_content }}</strong></p></pre>
+                    {% endif %}
+                    <hr>
+                {% endfor %}
+            {% else %}
+                <p>No results found.</p>
+            {% endif %}
+        {% endif %}
+
+        <!-- Add more information as needed -->
+    </div>
+
+    <footer>
+        <p>Arthur SATOUF <a href="https://www.linkedin.com/in/arthur-satouf/">LinkedIn</a> <a href="https://github.com/arthur-75">GitHub</a></p>
+        <!-- Add more contact information or links as needed -->
+    </footer>
+</body>
+</html>

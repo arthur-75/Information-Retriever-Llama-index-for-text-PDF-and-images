@@ -1,0 +1,15 @@
+Flask
+llama_index
+qdrant-client
+transformers
+torch 
+torchvision
+arxiv
+wikipedia
+frontend
+pymupdf
+pypdf
+ftfy 
+regex 
+tqdm
+git+https://github.com/openai/CLIP.git

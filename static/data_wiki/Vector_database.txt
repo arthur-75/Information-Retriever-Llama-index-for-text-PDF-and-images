@@ -1,0 +1,9 @@
+A vector database management system (VDBMS) or simply vector database or vector store is a database that can store vectors (fixed-length lists of numbers) along with other data items. Vector databases typically implement one or more Approximate Nearest Neighbor (ANN) algorithms, so that one can search the database with a query vector to retrieve the closest matching database records.
+Vectors are mathematical representations of data in a high-dimensional space. In this space, each dimension corresponds to a feature of the data, and tens of thousands of dimensions might be used to represent sophisticated data. A vector's position in this space represents its characteristics. Words, phrases, or entire documents, and images, audio, and other types of data can all be vectorized.These feature vectors may be computed from the raw data using machine learning methods such as feature extraction algorithms, word embeddings or deep learning networks. The goal is that semantically similar data items receive feature vectors that are close to each other. 
+Vector databases can be used for similarity search, multi-modal search, recommendations engines, large language models (LLMs), etc.Vector databases are also used to implement Retrieval-Augmented Generation (RAG), a method to improve domain-specific responses of large language models. Text documents describing the domain of interest are collected and for each document a feature vector (known as an "embedding") is computed, typically using a deep learning network, and stored in a vector database. Given a user prompt, the feature vector of the prompt is computed and the database is queried to retrieve the most relevant documents. These are then automatically added into the context window of the large language model and the large language model proceeds to create a response to the prompt given this context.
+
+
+== List of vector databases ==
+
+
+== References ==
