@@ -2,7 +2,7 @@
 
 This web application allows users to retrieve text and relevant images based on their queries using LLAMA2 LLM model and CLIP.
 
-<img src="https://github.com/arthur-75/Information-Retriever-Llama-index-for-text-PDF-and-images/blob/main/static/ex.png" width="600" height="670">
+<img src="https://github.com/arthur-75/Information-Retriever-Llama-index-for-text-PDF-and-images/blob/main/static/ex.png" width="600" height="600">
 
 ## Features
 
