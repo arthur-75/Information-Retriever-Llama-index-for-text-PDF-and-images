@@ -2,6 +2,8 @@
 
 This web application allows users to retrieve text and relevant images based on their queries using LLAMA2 LLM model and CLIP.
 
+<img src="https://github.com/arthur-75/Information-Retriever-Llama-index-for-text-PDF-and-images/blob/main/static/ex.png" width="600" height="800">
+
 ## Features
 
 - Retrieve text from PDF, TXT, and other formats.
@@ -11,8 +13,8 @@ This web application allows users to retrieve text and relevant images based on 
 ## Installation and Setup
 
 1. Clone the repository:
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/arthur-75/Information-Retriever-Llama-index-for-text-PDF-and-images.git
+cd Information-Retriever-Llama-index-for-text-PDF-and-images
 
 2. Install dependencies:
 pip install -r requirements.txt
